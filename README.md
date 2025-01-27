@@ -138,5 +138,5 @@ Mini-NDN (https://github.com/named-data/mini-ndn/), Mininet-WiFi
 (https://github.com/intrig-unicamp/mininet-wifi/) and, of course, Mininet
 (https://github.com/mininet/mininet).
 
-[ci-badge]: https://github.com/mininet-sec/mininet-sec/actions/workflows/docker-image.yml/badge.svg
-[ci-link]: https://github.com/mininet-sect/mininet-sec/actions/workflows/docker-image.yml
+[ci-badge]: ../../actions/workflows/docker-image.yml/badge.svg
+[ci-link]: ../../actions/workflows/docker-image.yml
