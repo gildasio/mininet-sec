@@ -55,7 +55,7 @@
         <button id="uarr" type="button">&uarr;</button>
         <button id="darr" type="button">&darr;</button>
         <button id="rarr" type="button">&rarr;</button>
-        <button id="themeButton" type="button">Tema Claro</button>
+        <button id="themeButton" type="button">☀︎</button>
       </div>
     </div>
     <!-- xterm -->
@@ -245,13 +245,6 @@
 
       /* Configure dark/light theme */
       /* Functions to deal with cookie to persist between xterm windows */
-      function setCookie(name, value, days) {
-        const expirationDate = new Date();
-        expirationDate.setDate(expirationDate.getDate() + days);
-        const cookie = `${name}=${value};expires=${expirationDate.toUTCString()};path=/`;
-        document.cookie = cookie;
-      }
-      
       function getCookie(name) {
         const cookies = document.cookie.split(';');
         for (let cookie of cookies) {
@@ -284,7 +277,7 @@
         isDarkTheme = !isDarkTheme;
         term.options.theme = isDarkTheme ? darkTheme : lightTheme;
         document.cookie = `xterm_theme=${isDarkTheme ? 'dark' : 'light'}`;
-        themeButton.textContent = isDarkTheme ? 'Tema Claro' : 'Tema Escuro';
+        themeButton.textContent = isDarkTheme ? '☀' : '❨';
       });
     </script>
     {% if gtag %}
